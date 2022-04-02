@@ -1,0 +1,2034 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- author : Mochammad Fachorrozi -->
+
+    <title>My CSS Note|Mochammad Fachorrozi</title>
+  </head>
+  <body id="home">
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger shadow-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home">CSS Note</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#css">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#layouting">CSS Layouting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#css3">CSS 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#flexbox">Flexbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#grid">Grid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sass">Sass</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end-navbar -->
+
+
+      <!-- css -->
+      <section id="css">
+          <div class="container">
+              <div class="row text-center mt-5 mb-3">
+                  <div class="col">
+                      <h2>CSS</h2>
+                      <h5>CSS (Cascading Style Sheet) adalah mekanisme sederhana yg mengatur gaya/style pada halaman web. ANATOMY CSS/struktur : - selector { property: value; }. Contoh h1 { color: blue; } . Artinya css pilih seluruh elemen h1 lalu ubah text didalamnya menjadi warna biru</h5>
+                  </div>
+              </div>
+
+              <div class="row justify-content-center fs-5 text-start">
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menempatkan CSS
+                        </button>
+
+                        <div class="dropdown-menu p-2  text-muted">
+                            <ol>
+                                <li>
+                                embed = disimpan di html yg sama dibagian head menggunakan tag style
+                                </li>
+                                <li>
+                                inline = didalam file yg sama dan di baris html itu juga, exp: p style = "color: blue;"
+                                </li>
+                                <li>
+                                external = disimpan pada bagian head untuk meload css yg diluar, exp: tag link href="" rel=""
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Font Styling
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                            <ol>
+                                <li>
+                                    font-family = utk mengatur jenis font yg akan digunakan. exp: font-family: Arial, Helvetica, sans-serif;
+                                </li>
+                                <li>
+                                    font-size = utk mengatur ukuran besar kecilnya font. exp: font-size: 30px;
+                                </li>
+                                <li>
+                                    font-weight = utk mengatur ketebalan font. exp: font-weight: 800;
+                                </li>
+                                <li>
+                                    font-variant = mengubah font menjadi small caps. exp: font-variant: small-caps;
+                                </li>
+                                <li>
+                                    font-style = mngubah font menjadi bercetak miring. exp: font-style: italic;
+                                </li>
+                                <li>
+                                    line-height = mengatur spasi antar baris. exp: line-height: 2px;
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Text Styling
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                            <ol>
+                                <li>
+                                    color= memberi warna. exp: color: red;                          
+                                </li>
+                                <li>
+                                    text-align= utk mengatur rata tulisan. exp: text-align: center;                      
+                                </li>
+                                <li>
+                                    text-indent= memberi identasi text / paragraf pertama atau tab. exp: text-indent: 20px;
+                                </li>
+                                <li>
+                                    text-decoration = mengatur dekorasi text. exp: text-decoration: underline;
+                                </li>
+                                <li>
+                                    text-transform= mengubah huruf menjadi huruf besar,kecil/kapital. exp: text-transform: uppercase;
+                                </li>
+                                <li>
+                                    letter-spacing= mengatur spasi antar huruf. exp: letter-spacing: 10px;
+                                </li>
+                                <li>
+                                    word-spacing= mengatur spasi antar kata. exp: word-spacing: 10px;
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="dropdown mt-2">
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Background
+                    </button>
+
+                    <div class="dropdown-menu p-2 text-muted">
+                        <ol>
+                            <li>
+                                exp: background-color: lightblue;
+                            </li>
+                            <li>
+                                exp: background-image: url(gambar/nakama.jpg);
+                            </li>
+                            <li>
+                                exp: background-repeat: no-repeat;  repeat-x = mengulangi gmbr searah sumbu x / mendatar. jika y vertikal  
+                            </li>
+                            <li>
+                                exp: background-position: bottom atau center; bisa dikombinasi bottom center
+                            </li>
+                            <li>
+                                disingkat/shorthand :  background: lightblue url(gambar/nakama.jpg) no-repeat top center;
+                            </li>
+                        </ol>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Selectors
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                            <ol>
+                                <li>
+                                Elemen HTML. exp: html, body, p, h1, ul
+                                </li>
+                                <li>
+                                id (disimbolkan dengan #). exp: #demo
+                                </li>
+                                <li>
+                                Class (disimbolkan dengan .). exp: .cetak-tebal  
+                            </li>
+                                <li>
+                                Complex Selector. exp: p .cetak-tebal
+                            </li>
+                                <li>
+                                    penjelasan: spasi artinya didalam, membaca perintah/selector dari kanan
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pseudo Class
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                            <p> pseudo class = kelas semu yang dimiliki oleh sebuah elemen HTML, yang membuat kita dapat mendefinisikan style pada "keadaan tertentu: dari elemen tersebut. Pseudo class yang berhubungan dengan link: <br>
+                                        :link = style default pada sebuah link(a yang memiliki href <br>
+                                        :hover = style ketika kursor mouse berada diatas sebuah link/elemen <br>
+                                        :active = style ketika sebuah link di-klik(keadaan aktif) <br>
+                                        :visited = style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser yang sama)
+                            </p>
+                            <p>
+                                posisi elemen(1) : <br>
+                                :firs-chil = memilih elemen pertama dari sebuah parent(elemen pembungkusnya) <br>
+                                :last-child = memilih elemen terakir dari sebuah parent (elemen pembungkusnya) <br>
+                                :nth-child = memiliki elemen ke-n dari sebuah parent(pembungkus elemennya),n bisa berti urutan(1),(2), atau pola(2n)
+                            </p>
+                            <p>
+                                posisi elemen(2) : <br>
+                                :first-of-type = memilih elemen pertama dari sebuah jenis / tipe tag <br>
+                                :last-of-type = memilih elemen terakhir dari sebuah jenis / tipe tag
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Inherit
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>Inherit = pewarisan.exp: body {
+                            font-family: arial;
+                            color: darkgrey;
+                        }
+                        /* supaya a href nya ngikut maka pake inherit(pewarisan dari si body) */
+                        a {
+                            color: inherit;
+                        } </p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Spesifik
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Cara menghitung spesifik: <br>
+                            Inline - Id - Class - Elemen Html <br>
+                            0 - 0 - 0 - 0. semakin ke kiri semakin berat/spesifik. exp:  #p1 {color: red} dengan p {color:blue} , lebih berat #p
+                        </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+          </div>
+      </section>
+      <!-- end css -->
+
+
+      <!-- Css layouting -->
+      <section id="layouting">
+          <div class="container">
+              <div class="row text-center mt-5 mb-3">
+                  <div class="col">
+                      <h2>CSS Layouting</h2>
+                      <h5>Css Layouting adalah teknik css untuk mengatur dan meletakkan atau memposisikan elemen-elemen html yang sudah dibuat menggunakan sintaks css.</h5>
+                  </div>
+              </div>
+
+              <div class="row justify-content-center fs-5 text-start">
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Display = mengatur perilaku dari kotak di CSS value pada display : inline, inline-block, block, none
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display | Block
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Block <br>
+                            - elemen HTML yang secara default menambahkan baris baru ketika dibuat <br>
+                            - jika tidak diatur lebar-nya, maka lebar default dari elemen block akan memenuhi lebar dari browser/parent-nya <br>
+                            - kita dapat mengatur tinggi dan lebar  dari elemen block <br>
+                            - didalam elemen block, kita dapat menyimpan tag dengan elemen inline,inline-blockatau bahkan elemen block lagi <br>
+                            contoh elemen block: h1-h6, p, ol, ul, li, form, hr, div 
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display | Inline
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            inline(tidak menambah baris baru/disebelah kanan): <br>
+                            - elemen html yg secara default tidak menambahkan baris baru ketika dibuat <br>
+                            - lebar dan tinggi elemennya sebesar konten yang ada di dalamanya <br>
+                            - kita tidak dapat mengatur tinggi dan lebar elemen inline <br>
+                            - margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertical <br>
+                            elemen inline : b, stong, u, em, a, span, sub, sup, button, input, label, select, textarea
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display | Inline-block
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Inline-block <br>
+                            - tidak ada elemen yang secara default memilki properti display: inline-block; <br>
+                            - kita harus ubah secara manual properti tersebut <br>
+                            - perilaku dasar sama dengan elemen inline <br>
+                            - perbedaannya, elemen inline-block dapat kita atur tingi dan lebar-nya
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mengubah Display
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: ubah daftar link dari li displaynya block menjadi inline <br>
+                            .navigasi li {
+                                display: inline;
+                            } <br>
+                            exp: utk menghilangkan gambar <br>
+                            img {
+                                display: none;
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dimensi & overflow
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Dimensi itu berisi tentang width dan height <br>
+                            Dimensi: <br>
+                            px = satuan absoulute/ nilainya pasti <br>
+                            % = nilai relative, relative terhadap elemen parentnya atau pembungkusnya <br>
+                            overflow = utk mengatur perilaku elemen yg keuar dari parentnya
+                            value overflow : visible, auto, hidden, scroll
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Box Model
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            CSS box model mendefinisikan 'kotak' yang dihasilkan oleh sebuah elemen, lalu menampilkannya sesuai dengan format visualnya <br>
+                            CSS box model terdiri dari margin, border, padding dan content <br>
+                            - margin = area transparan disekitar kotak(diluar border) <br>
+                            - border = batas disekeliling padding <br>
+                            - padding = area transparan didalam kotak(antara conten dan border) <br>
+                            - content = konten sebenarnya didalam box, bisa berupa text atau gambar <br>
+                            properti: - margin : margin-top, right, bottom, left, margin, begitupun yang lain
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Box Model : Auto
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            auto = nilai yg bisa kita kasih khusus utk margin kanan dan kiri maka kotak tersebuat akan ditengah. <br>
+                            exp:  margin-left: auto;
+                            margin-right: auto;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Box Model : Negatif Margin
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            -px = negatif margin. itu mengikuti arah/menerobos <br>
+                            exp: margin-top: -50px;
+                            margin-left: -100px;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Box Model : Overlapping Margin
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            overlapping margin = terjadi ketika kita menggabungkan kedua buah margin kiri dg kanan atau atas dg bawah <br>
+                            - margin bagian vertikal dia tidak menambahkan yg diambil margin yg paling besar <br>
+                            - margin horizontal = marginnya ditambahkan keduanya
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Padding & Border
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            padding = memeberikan jarak antara sebuah kotak dengan tulisan 
+                            perbedaan  padding dg margin : <br>
+                            - padding tidak bisa diberi niali negatif <br>
+                            - padding gak punya nilai auto <br>
+                            - padding menambah ukuran elemen <br>
+                            border juga menambah ukuran elemen, yaitu =>  total dimensi = width/height + padding + border
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Box Sizing
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Box sizing adalah properti yang menerima nilai padding dan border pada suatu elemen termasuk sebagai nilai total dari width dan height suatu elemen <br>
+                            exp: div {
+                                width: 600px;
+                                margin:10px auto;
+                                box-sizing: border-box; 
+                            } <br>
+                            .satu { /* 600 - [2*10] - [2*5] = 570px 
+                                width: 570px;*/
+                                background-color: royalblue;
+                                padding: 10px;
+                                border: 5px solid red;
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            CSS Reset
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            CSS Reset <br>
+                            css reset = teknik yang dapat membuat kita mengatur ulang nilai-nilai default dari elemen" pada HTML, khususnya margin dan padding <br>
+                            tujuan reset = supaya kita punya kendali penuh terhadap css yg akan dibuat <br>
+                            * = selector universal,tp berat <br>
+                            cara reset css : <br>
+                            - * { margin: 0; padding: 0;} <br>
+                            - untuk versi lengkap http://meyerweb.com/eric/tools/css/reset/ 
+                            v2.0 | 20110126
+                            License: none (public domain)
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Float
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Float = properti pada CSS untuk mengatur posisi sebuah elemen, sebuah elemen dapat dipaksa untuk berada disebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini <br>
+                            value Float : none, left, right <br>
+                            perilaku elemen jika diberi CSS : <br>
+                            - normal flow = kotak/elemennya tersusu secara baik dengan vertikal <br>
+                            - out-of flow <br>
+
+                            Yang bisa dilakukan menggunkan properti float :text wrapping, image galery, multi-column layout dll <br>
+                            exp: float: right; /* penggunaan float, maka kotak ini akan pindah ke kanan dan timbul */
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Float | Image Gallery
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            image galery = membuat serangkaian gambar menjadi galeri. exp: float: left;/* urutan mau dari sebelah mana? kiri atau kanan */ <br>
+                            <strong>TIPS :</strong> line-height: 80px; /*agar tulisan berada ditengah maka samakan nilainya dengan tingginya/height  */
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Float | Multi-column layout
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            multi-column layout = membuat halaman memiliki beberapa kolom <br>
+                            exp: .kiri {
+                                float: left;
+                            }
+                            .tengah {
+                                float: left;
+                            }
+                            .kanan {
+                                float: right;
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Float | Text Wrapping
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            text wrapping = membuat text mengelilingi gambar/elemen lain. exp: img {
+                                float: right;
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Float | Clear
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            fungsi clear di css adalah untuk menghapus sifat float yang diturunkan dari elemen diatasnya baik itu elemen div ataupun h1 h2 dll <br>
+                            cara menghentikan/membersihkan float: <br>
+                            - menggunakan property overflow: auto <br>
+                            - menggunakan tag div kosong div.clear <br>
+                            - menggunakan teknik micro clearfix <br>
+                            cara tepat untuk menghentikan float adalah clear : left, right, both(kiri-kanan/keduanya) <br>
+                            exp: /*     menggunakan div kosong
+                            .clear {
+                                clear: left;
+                            } */
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Position | Static
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            CSS Static <br>
+                            - static = nilai default dari tiap-tiap elemen ketika tidak diberi properti position <br>
+                            - menggunakan position selain static (non-static), akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya <br>
+                            - elemen yg diberi position selain static dapat menggunkan properti top,left,bottom dan right untuk mengatur posisinya
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Position | Relative
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            CSS Relative <br>
+                            yg dikasi nilai position relative maka div itu akan maju 1 dimensi <br>
+                            - ketika kita menggerakkan elemen dg posisi relative (menggunakan properti top,left,bottom,right)ruang yg ditempati oleh elemen tsb masi ada <br>
+                            - ketika kita menggerakkan elemen dg posisi relative, elemen akan bergerak relatif thd posisi semulanya <br>
+                            - jika kkita memberi properti top: 0; dan left:0; maka elemen tdk berubah posisinya
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Position | Absolute
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Absolute <br>
+                            - ketika kita menggerakkan elemen dg posisi absolute(menggunakan properti top,left,bottom,right),ruang yg ditempati oleh elemen tersebut dianggap tidak ada <br>
+                            - ketika kita menggerrakkan elemen dg posisi absolute, elemen akan bergerak relatife thd posisi dari elemen parent-nya, selama elemen parent memiliki elemen non static <br>
+                            - jika kita memberi properti top: 0; dan left: 0; maka elemen akan berada diujung kiri atas elemen parent-nya
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Position | Fixed
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Fixed <br>
+                            selalu bergerak relative ke window browser atau bersifat tetap terhadap browser tanpa adanya perubahan bahkan pada saat di scroll
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Position | z-index
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            z-index adalah property css yang mulai ada pada css2, fungsinya yaitu untuk mengatur posisi depan atau belakang suatu elemen. Value untuk property z-index berupa angka. Minimum value adalah 0. Tapi untuk browser-browser dengan versi lama bisa berupa angka negatif. <br>
+                            z-index = utk mengatur tumpukan dari elemen ketika elemen non-static, max=9999 & min= -9999. exp: z-index: 1 
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          </div>
+      </section>
+      <!-- end Css layouting -->
+
+
+      <!-- CSS 3 -->
+      <section id="css3">
+          <div class="container">
+              <div class="row text-center mt-5 mb-3">
+                  <div class="col">
+                      <h2>CSS 3</h2>
+                      <h5>CSS 3 = generasi ke-3 dari spesifikasi CSS yang direkomendasikan oleh W3C. Alasan menggunakan CSS : membuat website menjadi lebih fleksibel, membuat mock-up dengan cepat tanpa bantuan bahasa scipting, mengurangi penggunaan gambar = kecepatan load halaman dan penggunaan selector untuk menghindari penggunaan markup yang boros</h5>
+                  </div>
+              </div>
+
+              <div class="row justify-content-center fs-5 text-start">
+
+                  <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Border Radius
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Border radius = properti css3 yg fungsinya membuat kotak yg kita punya ujung"nya menjadi tumpul, semakin besar maka ujungnya akan semakin tumpul. <br>
+                            exp: border-radius: 150px; /* untuk membuat ujung ke 4 kotak  tumpul, untuk membuat bulat maka nilai harus setengah dari w & h */ <br>
+                            untuk menyingkat : border-radius: 0 50% 50% 50%; /* searah jarumm jam */                         
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opacity
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            opacity = transparansi pada elemen. exp: opacity: 0.5; /* nilai dari 0 sampe 1 */. <br>
+                            catatan: elemen child akan selalu mengikuti parent-nya                         
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            RGBA & HSLA
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Catatan: membuat parent-nya transparan tp childnya tidak <br>
+                                    rgba = red green blue alpha, alpha= tranparansi <br>
+                                    rgba = transparansi pada warna <br>
+                                    hsla = hue saturation lightness alpha, utk menentukan transparan warna <br>
+                                    hue=roda warna, saturation=1-100%, lighness=semakin kecl semakin gelap                       
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Box Shadow
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            box-shadow = properti css3 yg gunanya untuk memberikan bayangan pada elemen yg dibuat <br>
+                            properti box-shadow : <br>
+                            - x-offset = utk mengatur jarak bayangan pada sumbu horizontal, nilainya numerik <br>
+                            - y-offset = vertikal <br>
+                            - blur = berapa besar blur-nya <br>
+                            - color = warna <br>
+                            exp: /* box-shadow: 5px 5px 5px black;  x, y, blur, color. ganti tanda - utk memindahkan bayangan/kebalikannya */ atau bisa pake ini detail nya
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75); <br>
+                            box-shadow: inset => agar bayangan didalam                   
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Text Shadow
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            text-shadow = utk memeberikan bayangan pada text. value-nya : x-offset, y-offsie, blur, color. exp: text-shadow: 5px 5px 10px green                 
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Linear Gradient
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            gradients = teknik untuk memberikan warna gradasi pada elemen yg kita punya <br>
+                            type nya: <br>
+                            - linear gradient = memberikan grdasi warna secara garis lurus <br>
+                            - radial graddient = memberikan gradasi warna secara melingkar <br>
+                            - linear-gradient = bukan property css3, melainkan value untuk background-image <br>
+                            kenapa tdk background-color ? karena supaya kita bisa menggunkan bg img dan bg color secara bersama <br>
+                            exp: <br>
+                            - background-image: linear-gradient(red, #f0d606,rgba(255,255,0,1), green); <br>  
+                            - background-image: linear-gradient(45deg,red,green); <br>
+                            - background-image: linear-gradient(to right, red 63%, green 80%) ;                
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Radial Gradient
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            sintaksnya, background-image: radial gradient(warna awal, warna aakhir);warna awal=warna yg ditengah
+                            <br>
+                            utk mengatur lebar warna mengggunakan color stop, contohnya : radial-g(red10%, green 20%, blue 80%);
+                            <br>
+                            sintaks lengkap, radial-gradient(tipe, jangkauan, at posisi-y, posisix, warna-1, warna-2,... warna-n); <br>
+                            type : ellipse, circle <br>
+                            jangkauan = jarak dari pusat gradient ke sisi terluarnya <br>
+                            value jangkauan : <br>
+                            closest-corner = sudut terdekat elemen <br>
+                            closest-side = sisi terdekat elemen <br>
+                            farthest-corener = sudut terjauh elemen <br>
+                            farthest-side = sisi terjauh elemen <br>
+                            backhorund-image: radial-gradient(circle farthest-corner, red, blue);
+                            <br>
+                            posisi-y = top, center, bottom, px <br>
+                            posisi-x = left, center, right, px <br>
+                            radial-gradient(circle farthest-side at top left, red, blue); <br>
+                            exp: radial-gradient(red, blue); , radial-gradient(red 10%, green 20%, blue 70%); , radial-gradient(ellipse farthest-corner, red, blue); , radial-gradient(circle farthest-side at top left, red, blue);
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Font Face
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            @font-face = prperti css3 untuk mengelola font <br>
+                            caranya : <br>
+                            1. font-family <br>
+                            2. google fonts(wwww.fonts.google.com) <br>
+                            3. @font-face (www.fontsquirell.com) <br>
+
+                            exp: @font-face {
+                                font-family: 'BebasNeue';
+                                src: url(../fonts/Bebas_Neue/AnyConv.com__BebasNeue-Regular.woff) format('woff');
+                            }
+                            <br>                            
+
+                            macam" formatnya : ttf,otf,woff <br>
+                            rekomendasi formatnya woff/woff2, karena :
+                            woff = web open file format,
+                            dikembangkan oleh mozila,
+                            dibuat khusus untuk website,
+                            di-load lebih cepat drpd jenis font yg laen,
+                            merupakan kompresi dari tipe TTF / OTF
+                            <br>
+                            web font generic = merubah format font yg sebelumnya bukan woff menjadi woff.
+                            caranya masuk ke wesitenya, klik menu generic, pilih file, jika sudah copas ke file yg akan digunakan
+                            https://anyconv.com/id/ubah-ttf-ke-woff/
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Vendor Prefix
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            verdor prefixes = teknik di css3 yg digunakan agar sintaks css3 compatible di browser <br>
+                            vendor prefix = sintaks khusu yg harus ditambahkan utk beberapa property css3 <br>
+                            kenapa belajar vendor prefix? karena tidak semua browser support css3
+                            prefix/awalan, contoh : -webkit-properti-css3 ,-moz-,-ms-,-o-
+                            <br>
+                            websitenya shouldiprefix.com, caniuse.com, pleeease.io/play/, atau pake plug in emmet <br>
+                            exp: di chrome th 2016 atribut filternya belum bisa di load,maka harus menggunakan 
+                            -webkit-filter: grayscale(100%);
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Filter
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Filter = properti css3 yg digunakan untuk memberikan efek visual pada gambar, background atau border <br>
+                            sintaks, filter: tipe filter; <br>
+                            deg=degree, derajat searah jarum jam <br>
+                            macam-macam, filter {
+                                blur(px)
+                                brightness(angka | %) 
+                                contrast(angka | %)
+                                saturate(angka | %)
+                                grayscale(angka | %)
+                                sepia(angka | %)
+                                hue-rotate(deg)
+                                invert(angka | %)
+                                opacity(angka | %)
+                                drop-shadow(sama seperti box-shadow)
+                            } <br>
+                            img { /* gunakan frefix jika browser tdk bisa meload */
+                                /* filter: blur(30px); /* semakin besar maka semakin blur */
+                                /*filter: brightness(3);/* 1 = 100% , kecerahan*/
+                                /* filter: contrast();  */
+                                /* filter: saturate(150%); semakin besar maka semakin cerah/keluar */
+                                /* filter: grayscale(1); kebalikan saturate */
+                                /* filter: sepia(); warna kuning */
+                                /* filter: hue-rotate(100deg); roda warna */
+                                /* filter: invert(80%); efek negatif film */
+                                /* filter: opacity(0.5); bedanya filter  dengan opacity sj = filter ,gunakan hardware, opaciti, menggunakan browser */
+                                /* filter: drop-shadow(5px 5px 5px black); kekanan, kebawah, blur, warna */
+                                /* drop-shadow bisa digunakan untuk gambar, dan juga text serta elemen/ tulisan didalam gambar */
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Transition part 1
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            transition = berfungsi untuk memungkinkan kita dapat mengubah nilai property HTML secara halus <br>
+                            transition vs animation, keduanya hampir mirip. bedanya keadaan awal dan akhirnya <br>
+                            transition, keadaan awal dan keadaan akhir. perpindahannya bernama transisi <br>
+                            animation, keadaan awal, keyfram#1, keyframe#2 dst, keadaan akhir
+                            <br>
+                            properti, transition: properti tag durasi fungsi delay; /durasi yg wajib. durasi satuannya sekon(s), milisekon(ms) 
+
+                            property : all,  tag nama property , none <br>
+                                Animatable properties/ properti yg bisa di animasikan :<br>
+                                bg-color,            top left bottom right,
+                                bg-position,         margin padding,
+                                bg-size,             width height,
+                                border,              opacity,
+                                color,               transform,
+                                filter,              word-spacing,
+                                font-size,           letter-spacing,
+                                line-height,         . . .
+                                <br>
+                                non-animatable :
+                                font-family
+                                display
+                                position 
+                                <br>
+                                exp: .kotak {
+                                    width: 100px;
+                                    height: 100px;
+                                    background-color: salmon;
+                                    transition: 1s; /* taruh diposisi awal, supaya halus */
+                                } 
+                                .container:hover .kotak { 
+                                    transform: rotate(720deg);
+                                    margin-left: 800px;
+                                    background-color: royalblue;
+                                }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Transition part 2
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            fungsi transisi = pergerakan apa yg dilakukan pd saat transisi valuenya: ease, ease-in,ease-out, ease-in-out, linear, cubic-bezier(w,x,y,z). ease= defaultnya <br>
+                            
+                            delay = memberikan waktu tunggu sebelum menjalankan transisi, satuan m/ms <br>
+                            exp: .kotak1 { transition: all 3s ease; }
+                            .kotak2 { transition: all 3s ease-in; }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Delay
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            delay = memberikan waktu tunggu sebelum menjalankan transisi, satuan m/ms <br> 
+                            nilai ke-1 durasi, nilai ke-2 delay <br>
+                            exp: .satu { transition: 3s 2s; /* tunggu dulu 2detik lalu lakukan trnasisi 3detik */} <br>
+                            .dua { transition: margin-left 3s, transform 3s 2s; } /* kekiri selama 3s, lalu tunggu 2s lalu putar 3s */
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Animation
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Di dalam animation ada 5 keadaan: keyframe#1 ,2,3,4,5.
+                            sintaksnya, @keyframes [name] {
+                                from {
+                                    [property-css]
+                                }
+                                to {
+                                    [properti-css]
+                                }
+                            }
+                            <br>
+                            nilai animation :
+                            name, duration, timing-function, delay, itteration-count, direction, fil-mode, play-state <br>
+                            name = wajib ada <br>
+                            iteration-count =mau diulang berapa kali ( angka | infinite ) <br>
+                            direction = normal | reverse | alternate | alternative-reverse <br>
+                            fill-mode(penentuan akhir transisi = none | forwads | backwash | both) <br>
+                            play-satte = running | paused <br>
+                            exp: 
+                            .kotak1 {
+                                width: 200px;
+                                height: 200px;
+                                background-color: red;
+                                animation: animasikotak1 2s ease; /* nama animasi keyframe, durasi, timing function . tag juga bisa disimpan di tag hover*/
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            : target
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            target = pseudo class/kelas semu dari sebuah elemen html yg bisa dikasi lewat css <br>
+                            target = pseudo-class yg mempresentasikan sebuah elemen unik dengan id yg sama dg penggalan identifier pada URL(uniform resource identifier) <br>
+                            posisinya di akhir alamat/URL ,contoh sandika.htmk/#about
+                            target = elemen apapun yg ditarget melalui url maka akan aktif
+                            <br>
+                            exp: buat href yg menuju id tertentu, lalu tujuan beri id dan class. .p1:target {
+                                background-color: salmon;
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lightbox
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            lightbox : sebuah galery yg dibuat menggunakan javascript juga berarti jika kita klik foto maka foto itu akan besar dengan menggunakan html
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+              </div>
+          </div>
+      </section>
+      <!-- end CSS 3 -->
+
+
+      <!-- flexbox -->
+      <section id="flexbox">
+          <div class="container">
+              <div class="row text-center mt-5 mb-3">
+                  <div class="col">
+                      <h2>Flexbox</h2>
+                      <h5>Flek box = mempermudah utk mengatur tata letak css/div
+                        definisi Flek box adalah sebuah model layout 1 dimensi yg dapat mengatur jarak dan penjajaran antar item dalam sebuah container.</h5>
+                        <ul>
+                            <li>
+                                1 dimensi ? maksudnya dg menggunakan flek box kita hanya dapat mengatur 1 dimensi pada saat tertentu, antara baris(hor) atau kolom(ver), tidak bisa keduanya sekaligus.
+                            </li>
+                            <li>
+                                2 dimensi menggunkan css grid
+                                flexbox layout module adalah sebuahh modul yg menawarkan cara yg efektif utk menyusun, mensejajarkan dan mendistribusikan jarak antar item di dalam sebuah container, meskipun ukurannya dinamis atau bahkan kita tidak tau.
+                            </li>
+                        </ul> 
+                         
+                        
+                  </div>
+              </div>
+
+              <div class="row justify-content-center fs-5 text-start">
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Teori 
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            main axis = set elemen secara horizontal <br>
+                            cross axis = set elemen secara vertikal <br>
+                            main size = ukuran dari containernya <br>
+                            cross size = ukuran dari kolom <br>
+                            main start - main end = menentukan awal dan akir dr elemen secara hor <br>
+                            cross start - cross end = menentukan awal dan akir dr elemen secara ver <br>
+
+                            istilah pada flexbox : <br>
+                            - main axis = sumbu utama dari sebuah container yg menentukan urutan dari penempatan items secara horizontal <br>
+                            - main-start | main-end = mulai dan berakhirnya items yg disimpan di dalam container <br>
+                            - main size = ukuran (widt/height) dari container yg akan membuat dimensi dari itemsnya relatif terhadap main size <br>
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display 1
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            .container {
+                                display: flex; /* atau inline-flex */
+                            } <br>
+                            membuat sebuah elemen parent menjadi flex box, dan membuat elemen2 di dalamnya bisa berprilaku flex juga <br>
+
+                            flex-direction untuk mengatur arah dari urutan dari elemen2 didalamnya <br>
+                            .container {
+                                flex-direction: row | row-reverse | column | column-reverse;
+                            } <br>
+                            row = dari kiri kekanan, reverse = kebalikannya <br>
+                            column = atas kebawah
+                            <br>
+                            flex-wrap = utk mengatur ketika elemen yg kita punya itu sudah tdk muat lagi ke container dalam barisnya, lalu kasih turun dibawahnya <br>
+                            .container {
+                                flex-wrap: nowrap | wrap | wrap-reverse;
+                            }<br>
+                            secara default semua item didalam container akan berada pada satu baris meskipun ukurannya sudah tidak cukup, wrap memungkinkan untuk memindahkan item ke baris dibawahnya
+
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display 2
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            .container {
+                                jusitify-content: filex-start | fixed-end | center | space-between | space-around | space-evenly;
+                            } <br>
+                            mengatur jarak antar items secara horizontal <br>
+
+                            .container {
+                                align-items: flex-start | flex-end | center | stretch | baseline;
+                            } <br>
+                            mengatur perilaku penjajaran items dengan arah vertikal <br>
+
+                            .container {
+                                align-content: flex-start | flex-end | center | space-between | space-around;
+                            } <br>
+                            mengatur jarak antar items terhadap sumbu horizontal (hanya berfungsi ketika items lebih dari 1 baris)
+
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Property dan Align-self
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Property pada items <br>
+                            order = untuk mengatur posisi pada items <br>
+                            contoh =>  .satu { order: 2} 
+                            <br>
+                            flex-grow / flex untuk mengatur ukuran dari itemnya <br>
+                            contoh => .satu { flex-grow: 1; }
+                                    .dua { flex-grow: 3; }
+                                    <br>
+                            align-self untuk mengatur perilaku penjajaran sebuah item yg spesifik terhadap kusus untuk 1 kolom sj <br>
+                            .item {
+                                align-self: auto | flex-start | flex-end | center | baseline | stret; 
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+              </div>
+
+          </div>
+      </section>
+      <!-- end flexbox -->
+
+
+      <!-- Grid -->
+      <section id="grid">
+          <div class="container">
+              <div class="row text-center mt-5 mb-3">
+                  <div class="col">
+                      <h2>Grid</h2>
+                      <h5>Secara sederhana CSS Grid adalah CSS yang dapat membagi kolom pada website menjadi beberapa bagian sesuai yang diinginkan, baik secara horizontal maupun vertikal. Penggunaan CSS Grid bertujuan untuk mempermudah developer untuk membuat layout dari design yang telah dibuat</h5>
+                  </div>
+              </div>
+
+              <div class="row justify-content-center fs-5 text-start">
+
+                  <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: <br>
+                            .container {
+                                width: 600px;
+                                margin: 50px auto;
+                                border: 5px solid #333;
+                                box-sizing: border-box;
+                                padding: 5px;
+                                display: grid;
+                                grid-template-areas: "header header"
+                                  "aside main"
+                                  "nav main"
+                                  "footer footer";
+                                grid-template-columns: 1fr 1.5fr;
+                                /* fr/frektion = pecahan */
+                                grid-template-rows: 1fr 1fr 1.3fr;
+                              }
+                              <br>
+                              header {
+                                grid-area: header;
+                                background-color: #B063D8;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                              }
+                              <br>
+                              aside {
+                                grid-area: aside;
+                                background-color: #2F93FF;
+                                padding: 60px 0;
+                              }
+                              <br>
+                              nav {
+                                grid-area: nav;
+                                background-color: #E45765;
+                                padding: 100px 0;
+                              }
+                              <br>
+                              main {
+                                grid-area: main;
+                                background-color: #E0AA77;
+                                box-sizing: border-box;
+                                flex: 1.5;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                              }
+                              <br>
+                              footer {
+                                grid-area: footer;
+                                background-color: #666;
+                                padding: 20px 0;
+                              }                            
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Terminologi/Istilah
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Grid container = elemen pembungkus grid, penulisanan => display:grid; <br>
+                            Grid item = element2 yg berada 1level didalam grid container <br>
+                            Grid line = garis horizontal(kolom) atau vertikal(baris) yg memisahhkan grid menjadi beberapa bagian dan ditandai dg angka <br>
+                            Grid cell = perpotongan/pertemuan antara baris dan kolom didalam grid <br>
+                            Grid area = kumpulan lebih dari satu grid cell yg membentuk kotak <br>
+                            Grid track = ukuran/jarak antara 2 grid line, bisa horizontal(kolom) atau vertikal(baris) <br>
+                            Grid gap = jarak antara grid track/cell              
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid-template-colums & Grid-template-rows
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            mendefinisikan kolom/baris dg cara menuliskan nilai dipisahkan oleh spasi. nilai mempresentasikan ukuran grid track dan spasi mempresentasikan grid line <br>
+                            sintaks: <br>
+                            .container{ <br>
+                            display: grid; <br>
+                            grid-template-columns: track-size ...| line-name track-size ...; <br>
+                            grid-template-rows: track-size ...| line-name track-size ...; <br>
+                                - track-size: bisa berupa px, %,auto, atau fr(ftaction/bagian) <br>
+                                - line-name: nama yg bisa diberikan pada track <br>
+                            } <br>
+                            exp:  <br>
+                            .container {
+                                width: 600px;
+                                margin: 50px auto;
+                                /* utk ketengah */
+                                display: grid;
+                                grid-template-columns: 25% auto 50px;
+                                grid-template-rows: 50px 100px auto;
+                              }       
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Implicit & Explicit                        
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Explicit = secara jelas menjelaskan ukuran grid <br>
+                            Implicit = ukuran otomatis ditentukan oleh grid <br>
+                            
+                            grid-auto-columns & grid-auto-rows = mengatur ukuran grid track yg tidak dituliskan pada grid-template(implicit track) <br>
+                            
+                            .container {
+                                grid-auto-columns: track-size;
+                                grid-auto-rows: track-size;
+                            }
+                            <br>
+                            gri-auto-flow = mengatur penempatan item/cell pada grid track, termasuk yg ditulis secara implicit <br>
+                            .container{
+                                grid-auto-flow: row| column| row dense| column dense;
+                            }  <br>
+                            exp: <br>
+                             .container {
+                                width: 600px;
+                                margin: 50px auto;
+                                display: grid;
+                                grid-template-columns: 50px 200px;
+                                grid-template-rows: 100px 50px;
+                                /* implisit track */
+                                grid-auto-columns: 400px;
+                                grid-auto-rows: 400px;
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Auto Flow                      
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: <br> 
+                            .container { <br>
+                                width: 600px; <br>
+                                margin: 50px auto; <br>
+                                display: grid; <br>
+                                grid-template-columns: 50px 200px; <br>
+                                grid-template-rows: 100px 50px; <br>
+                          
+                                /* Auto Flow */ <br>
+                                grid-auto-flow: column; <br>
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Membuat Gallery                      
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: <br>
+                            img {
+                                display: block;
+                                width: 100%;
+                              }
+                          <br>
+                              .gallery {
+                                width: 80%;
+                                margin: auto;
+                                border: 10px solid white;
+                                box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+                                list-style: none;
+                                /*agar bulatan lis  hilang*/
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                                /* auto-fit = ngisi tempat yg kosong */
+                                grid-gap: 5px;
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Repeat                      
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            repeat() = menentukan ukuran grid track secara langsung <br>
+                            exp: .container {
+                                width: 60%;
+                                margin: 50px auto;
+                                display: grid;
+                                grid-template-columns: repeat(9, 1fr) repeat(2, 2fr);
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Min dan Max Content                      
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            min-content & max-content = menetukan seberapa besar ukuran grid track berdasarkan content pada sebuah item <br>
+                            min = memecah ukuran kalimat per kata <br>
+                            max= membuat kalimat tsb pjg <br>
+                            exp:  .container {
+                                width: 60%;
+                                margin: 50px auto;
+                                display: grid;
+                                grid-template-columns: 1fr min-content 1fr;
+                                /* min/max-content */
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Auto Fill & Auto Fit
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            auto-fill & auto-fit adalah menentukan jumlah item utk berada pada grid track <br>
+                            exp: 
+                            .container{
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, 150px)
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            MinMax
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            minmax() = utk menentukan ukuran min dan maxdari grid track <br>
+                            .container{
+                                display: grid;
+                                grid-template-columns: minmax(200px, 300px)
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid Template Area
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Grid Template Area = mendefinisikan grid template menggunakan nama dari area yg ditulis pada property gri-area pada item <br>
+                            .container {
+                                grid-template-areas:
+                                "nama-area> | none | '.'"
+                                "nama-area> nama-area>"
+                            } <br>
+                            exp: grid-template-areas:
+                            'header header header'
+                            'sidebar sidebar sidebar'
+                            'content content content'
+                            'footer footer footer';
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid Template
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Grid Template = shorthand utk mendefinisikan grid-template-rows, grid-template-columns dan grid-template-areas dalam satu deklarasi <br>
+                            .container {
+                                grid-template: grid-template-rows> | grid-template-area> / grid-template-columns>;
+                            } <br>
+                            exp: grid-template:
+                            [baris1-mulai] 'header header header' 50px [baris1-akhir]
+                            [baris2-mulai] 'footer footer footer' 50px [baris2-akhir]
+                            / 1fr 2fr 3fr; 
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid Gap
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            grid-gap / gap = shorthand utk mendefinisikan column-gap, row-gap dalam satu deklarasi <br>
+                            grid = shorthand utk mendefinisikan properti2 berikur dalam satu deklarasi (grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-rows, dan grid-auto-flow) <br>
+                            exp:  grid-column-gap: 10px;
+                            grid-row-gap: 25px;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Align Content
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: <br>
+                            align-content: start | end | center | stretch | space-around | space-between | space-between;                        
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Align Items
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: <br>
+                            align-items: start | end | start | stretch;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Justify Content
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Justify content adalah mengatur posisi seluruh grid container pd sumbu horizontal. <br>
+                            ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran containernya, biasanya ketika grid itemsnya menggunakan ukuranyg fixed(px) <br>
+                            exp: .container {
+                            justify-Content: start|end|center|stretch|space-around|space-between|space-evenly;
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Justify Items
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            exp: <br>
+                            Justify-items: start | end | start | stretch;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Place Content
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Place Content = shorthand utk menulis justify-content dan align-content dalam satu deklarasi <br>
+                            .container {
+                            place-content: align-content> justify-content>; } <br>
+                            exp: /* justify-content: center;
+                            align-content: center; */
+                          place-content: space-between;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Place items
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Place items = shorthand utk menulis justify-items dan align-items dalam satu deklarasi <br>
+                            .container {
+                            place-items: align-items> justify-items>; } <br>
+                            exp: /* justify-items: center;
+                            align-items: center; */
+                          place-items: center end;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid Items Properties
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            grid-column-start & grid-column-end |
+                            grid-row-start & grid-row-end =
+                            menentukan tempat dari grid item dg mengacu pd nomor atau nama grid line yg spesifik <br>
+                            .item {
+                            grid-column-start: nomor>|nama>|span nomor>| span nama>|auto;
+                                .. yg lain juga sama
+                            <br>
+                                ketereangan: 
+                                nomor>|nama>: mengacu pd nomor atau nama yg kita beri pd grid line <br>
+                                span nomor>: item akan memanjang/melebar sampai sejumlah nomor <br>
+                                span nama>: item akan memanjang/melebar sampai ke nama grid line tertentu <br>
+                                exp: grid-column-start: -1;
+                                grid-column-end: -2;
+                                grid-row-start: -4;
+                                grid-row-end: -1;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid-column & Grid-row
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            grid-column & grid-row = shorthand utk start dan end pada grid-column & grid-row <br>
+                            .item {
+                                grid-column: start-line>/end-line>|start-line>/spanvalue>;
+                            } <br>
+                            exp:  grid-column: 1 / span 2;
+                            grid-row: 1 / span 2;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Grid-area
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            grid-area = menentukan nama area pd item sesuai dg template yg sudah dibuat sebelumnya memlalui properti grid-template-areas
+                            bisa digunakan sbg shorthand utk grid-column-start, grid-column-end, grid-row-start dan grid-row-end <br>
+                            .item {
+                            grid-area: name>|row-start>/column-start>/row-end>/column-end>
+                            }
+                            exp: <br>
+                            grid-template-areas:
+                            'header header header'
+                            'sidebar content content'
+                            'footer footer footer';
+                            <br>
+                            header {
+                                grid-area: header;
+                                background-color: lightblue;
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Justify-self
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            justify-self = mengatur posisi item pd sebuah cell thd sumbu horizontal. <br>
+                            exp: justify-self: start | end | center | stretch;
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Place-self
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            place self = shorthand posisi item pd sebuah cell thd sumbu vertikal dan sumbu horizontal dalam satu deklarasi <br>
+                            .item {
+                                place-self: align-self> justify-self>;
+                            } <br>
+                            exp:  .my-item {
+                                background-color: lightblue;
+                                place-self: end;
+                              }
+                        </p>
+                        </div>
+
+                    </div>
+
+                  </div>
+
+              </div>
+          </div>
+      </section>
+      <!-- end Grid -->
+
+
+      <!-- Sass -->
+      <section id="sass">
+          <div class="container">
+              <div class="row text-center mt-5 mb-3">
+                  <div class="col">
+                      <h2>Sass</h2>
+                      <h5>SASS = Sintaktikali Awesome Style Sheet.
+                        Alasan menggunakan Sass: mempermudah penulisan, pengelolaan, memiliki banyak fungsi built-in, dapat membuat fungsi sendiri, dapat memodifikasi framework css(cth: boostrap), banyak perusahaan yg menggunakan SASS</h5>
+                  </div>
+              </div>
+
+              <div class="row justify-content-center fs-5 text-start">
+                  
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Teori
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Sass vs Scss = kalo Scss sintaksnya hampir mirip dg css (keduanya akan tetap di compile).
+                            <br>
+                            instalasi compiler SASS: aplikasi, commad line, vscode extension
+                            <br>
+                            Alasan tidak menggunakan Sass:
+                            - banyak fitur sass yg sekarang sudah dimiliki oleh css,
+                            - tidak utk projec kecil,
+                            - styled component/css in js <br>
+                            exp: $myColor: salmon;
+                            $pColor: #fff;
+                            header {
+                                background-color: $myColor;
+                                h1 {
+                                    font-size: 3rem;
+                                }
+                            
+                                p {
+                                    color: $pColor;
+                                }
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nesting
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Nesting adalah membuat hirarki visual yg jelas utk selector css kita
+                            <br>
+                            &  = parent selector <br>
+                            container ini ada diatas dari class main/ elemen parent <br>
+                            .main {
+                                .container & {
+                                    background-color: green;
+                                }
+                                <br>
+                                // jika pake elemen lebih baik manggil pake class <br>
+                            .footer {
+                                & &-heading {
+                                    font-size: 2em;
+                                    background-color: yellow;
+                                }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Variable
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Kelebihan variable di CSS memudahkan, kekurangan belum semua browser support <br>
+                            :root { <br>
+                                :root agar elemennya dapat mengakses variabel ini <br>
+                                   --primary-color: #ababab; <br>
+                                   --secondary-color: pink; <br>
+                                   --text-color: red; <br>
+                                } <br>
+                                
+                                $primary-color: #ababab; // variabel local <br>
+                                $primary-color: #ababab !global; //membuat variable menjadi scope global <br>
+
+                                Map => exp: $alert-danger: red; <br>
+                                atau $alert: (
+                                    'danger': red, <br>
+                                pemanggilan :  color: map-get($alert, 'danger');
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mixin
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                        mixin adalah kumpulan style yg dapat kita gunakan berulang-ulang
+                        keyword wajib @mixin = utk membuat mixin, @include = memanggilnya <br>
+                        membuat mixin, nama mixin bebas <br>
+                        exp buat: @mixin inline-list {
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                            li {
+                                display: inline-block;
+                            }
+                        } <br>
+                        exp panggil : header ul {
+                            // panggil mixin
+                            @include inline-list();
+                            li {
+                                background-color: black;
+                                padding: 0.7em;
+                                a {
+                                    color: white;
+                                }
+                            }
+                        }
+                        </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Modules
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            modules = membuat code sass kita modular/mudah utk dikelola keywordnya @import & @use <br>
+                            agar file main dapat mengenali file _mixin, maka panggil import sudah siadopsi oleh css biasa, nama lengkap dan extensinya <br>
+                            kekurangan @import : variablenya menjadi global, dll dapat dilihat di website sass <br>
+                            exp : @use 'modules/header'; dan @mixin inline-list { }
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Flow Control
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            flow control = sebuah konsep utk mengatur alur kendali dari script SASS <br>
+                            keywordnya : <br>
+                            1. @if, @else. @else if  = pengkondisian/percabangan <br>
+                            2. @for = utk perulangan <br>
+                            3. @while = perulangan  <br>
+                            4. @each = perulangan <br>
+                            exp: @mixin color-mode($light-mode: true) {
+                                @if $light-mode {
+                                    background-color: $light-bg;
+                                    color: $light-text;
+                                } @else {
+                                    background-color: $dark-bg;
+                                    color: $dark-text;
+                                }
+                            }
+
+                        </p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Built-in Function/Modules
+                        </button>
+
+                        <div class="dropdown-menu p-2 text-muted">
+                        <p>
+                            Built-in Modules: Color <br>
+                            adjust-color($color, <br>
+                            $red:null, $green: null, $blue: null,  <br>
+                            $hue: null, $saturation: null, $lightness:null, <br>
+                            $whiteness: null, $blackness: null, $alpha: null) <br>
+                            exp: $warna-dasar: salmon;  <br>
+                            color: adjust-hue($warna-dasar, 30deg); atau <br>
+                            semakin menjauh dari pusat roda warna <br>
+                            darken($color, $amount)
+                            h1 {
+                                color: darken($warna-dasar, 20%);
+                            }
+                        </p>
+                        </div>
+
+                    </div>
+
+                  </div>
+              
+                </div>
+
+          </div>
+      </section>
+      <!-- end Sass -->
+
+
+      <!-- footer -->
+      <footer class="bg-danger text-white">
+        <p class="text-center pt-4">Created with <i class="bi bi-laptop"></i> by. <a href="https://www.instagram.com/fachorrozi_/" target="_blank" class="text-white fw-bold"> Mochammad Fachorrozi</a></p>
+      </footer>
+      <!-- end footer -->
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+/* body {
+    min-height: 4000px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown-toggle {
+    width: 100%;
+}
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#css, #css3, #grid {
+    background-color: rgb(248, 213, 213);
+}
+
+footer {
+    height: 10vh;
+    margin-top: 150px;
+}
